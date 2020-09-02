@@ -1,0 +1,137 @@
+@improt url('https://fonts.googleapis.com/css?family=Lato');
+@charset UTF-8;
+
+body, h2, ul {
+        margin:0;
+        padding: 0;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 30px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.wrapper {
+    width: 1532px;
+    margin: 50px;
+}
+
+.side-menu {
+    float: left;
+    width: 270px;
+}
+
+.menu {
+    margin-bottom: 70px;
+}
+
+.menu li a {
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+    color: #2c3e50;
+    padding : 0 20px;
+}
+
+.menu li:last-child a {
+    border-bottom: 0;
+}
+
+.menu li a:hover {
+  background-color: pink;
+  color: white;
+}
+
+/*
+.menu li a: hover {
+    background-color: #efb22f;
+    color: #fff;
+    background-color: url(img.jpg/arr.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+*/
+
+.title {
+    margin-top: 30px
+}
+
+.brochure {
+    margin-top: 20px;
+}
+
+.brochure a {
+    display: block;
+    color: #8a8a8a;
+    /*
+    background-image: url(img.jpg/007.jpg)
+    background-repeat: no-repeat;
+    background-position: left center;
+    */
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.contents {
+    float: left;
+    width: 900px;
+}
+
+.project-list {
+    overflow: hidden;
+}
+
+.project-list li {
+    width: 270px;
+    float: left;
+    margin: 0 0 50px 30px;
+}
+
+.project-list li img {
+    opacity : 0.7;
+    width: 270px;
+    height: 200px;
+}
+
+.project-list li img:hover {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.project-list li .desc {
+    line-height: 2;
+    color: #848484;
+}
+
+.project-list li .more {
+    color: #efb22f;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@@media(max-width: 800px) {
+    .side-menu {
+      display: inline;
+    }
+    .contents {
+      display: inline;
+    }
+}
+</style>
